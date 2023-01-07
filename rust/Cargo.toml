@@ -1,0 +1,12 @@
+[package]
+name = "rust-aws-lambda-api"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "bootstrap"
+path = "src/main.rs"
+
+[dependencies]
+lambda-web = { version = "0.2.0", features=["rocket05"] }
+rocket = { version = "0.5.0-rc.2" }
